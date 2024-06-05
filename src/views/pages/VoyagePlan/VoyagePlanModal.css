@@ -1,0 +1,149 @@
+.page05-voyage-plan-modal-none {
+  display: none;
+}
+
+.page05-voyage-plan-modal {
+  height: 100%;
+  display: flex;
+}
+
+.page05-voyage-plan-modal-area {
+  width: 940px;
+  height: 850px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.page05-voyage-plan-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.page05-modal-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page05-modal-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.page05-modal-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page05-modal-header p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.page05-modal-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page05-modal-contents {
+  width: 870px;
+  height: 660px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto auto 50px;
+  overflow-y: scroll;
+}
+
+.page05-modal-contents::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.page05-modal-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.page05-modal-button .page05-file-info {
+  flex: 0.4;
+  height: 60px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.page05-modal-button .page05-file-info span {
+  width: 50px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.page05-modal-button .page05-file-info div:nth-child(1) {
+  margin-top: 10px;
+}
+
+.page05-modal-button button {
+  flex: 0.3;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page05-modal-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+
+.page05-modal-button .page05-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page05-modal-button .page05-ok-button {
+  background-color: #E66300;
+}
+
+.page05-modal-button .page05-ok-button:disabled {
+  color: black;
+  background-color: #ccc;
+  opacity: 1;
+  cursor: default;
+}

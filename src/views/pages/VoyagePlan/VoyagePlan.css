@@ -1,0 +1,317 @@
+.page05-contents {
+  width: calc(100% - 63px);
+  height: calc(100vh - 85px);
+  background-color: #212332;
+}
+
+.page05-page-title {
+  margin-top: 25px;
+  margin-left: 25px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page05-voyage-plan-area {
+  width: 1750px;
+  height: calc(100vh - 300px);
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto auto auto;
+  overflow-y: auto;
+}
+
+.page05-voyage-plan-area::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* .page05-voyage-plan-area > .page05-voyage-plan-title-area {
+  width: 840px;
+  display: flex;
+  margin: 0 auto auto auto;
+  border-bottom: rgba(255, 255, 255, 0.5) 1px dashed;
+  margin-top: 28px;
+} */
+
+/* .page05-voyage-plan-title {
+  margin: 0 0 10px 30px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+} */
+
+.page05-voyage-plan-grid {
+  display: grid;
+  grid-template-columns: 1fr 840px 1fr;
+  grid-template-rows: 240px;
+}
+
+.page05-sailing-time-area {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 20px auto auto;
+}
+
+.page05-sea-route-grid {
+  display: flex;
+  flex-direction: column;
+  width: 33px;
+}
+
+.page05-sea-route-grid div:nth-child(1) {
+  height: 191px;
+  /* height: 74px; */
+  display: flex;
+  margin: auto;
+}
+
+.page05-sea-route-grid div:nth-child(2) {
+  height: 31px;
+  display: flex;
+  margin: auto;
+}
+
+.page05-sailing-time-grid {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+}
+
+.page05-sailing-time-grid > div:nth-child(1) {
+  height: 80px;
+  display: flex;
+  margin: 10px 0px auto auto;
+}
+
+.page05-sailing-time-grid > div:nth-child(3) {
+  height: 80px;
+  display: flex;
+  margin: auto 0px auto auto;
+}
+
+.page05-sailing-time-grid > div:nth-child(1) svg
+, .page05-sailing-time-grid > div:nth-child(3) svg {
+  height: 75px;
+}
+
+.page05-sailing-time-grid > div:nth-child(2)
+, .page05-sailing-time-grid > div:nth-child(4) {
+  height: 40px;
+  display: flex;
+  margin: auto 0px auto auto;
+  font-family: Meiryo;
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.page05-sailing-time-grid > div:nth-child(2) > div
+, .page05-sailing-time-grid > div:nth-child(4) > div {
+  display: flex;
+  margin: auto;
+}
+
+.page05-target-voyage-plan .page05-sailing-time-grid div:nth-child(1) div svg path:nth-child(1) {
+  stroke: #20FFF2;
+}
+
+.page05-target-voyage-plan .page05-sailing-time-grid div:nth-child(3) div svg path:nth-child(1) {
+  stroke: #20FFF2;
+}
+
+.page05-target-voyage-plan-top .page05-sailing-time-grid div:nth-child(3) div svg path:nth-child(2) {
+  stroke: #20FFF2;
+}
+
+.page05-target-voyage-plan-bottom .page05-sailing-time-grid div:nth-child(1) div svg path:nth-child(2) {
+  stroke: #20FFF2;
+}
+
+.page05-voyage-plan-grid:nth-child(1) .page05-sailing-time-grid div:nth-child(1) div svg path:nth-child(2) {
+  stroke: none;
+}
+
+.page05-voyage-plan-grid:nth-last-child(1) .page05-sailing-time-grid div:nth-child(3) div svg path:nth-child(2) {
+  stroke: none;
+}
+
+.page05-voyage-plan-grid:nth-last-child(1) .page05-sea-route-grid div:nth-child(2) {
+  display: none;
+  height: 0px;
+}
+
+.page05-voyage-plan-grid:nth-last-child(1) .page05-sailing-time-grid div:nth-child(4) {
+  display: none;
+  height: 0px;
+}
+
+.page05-voyage-plan-grid .page05-location-area {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto auto auto;
+}
+
+.page05-voyage-plan-grid .page05-location-area .page05-voyage-plan-title-area {
+  width: 840px;
+  display: flex;
+  margin: auto;
+  border-bottom: rgba(255, 255, 255, 0.5) 1px dashed;
+  margin-top: 28px;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) {
+  width: 840px;
+  height: 70px;
+  background-color: rgba(27, 21, 21, 0.17);
+  display: flex;
+  border-bottom: 2px rgba(0, 0, 0, 0.17) solid;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(1)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(1) {
+  display: flex;
+  margin: auto 30px;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(2)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(2) {
+  width: 280px;
+  display: flex;
+  margin: auto 40px auto 0px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-family: Meiryo;
+  font-size: 15px;
+  color: #FFFFFF;
+  border-bottom: rgba(217, 217, 217, 0.05) 1.5px solid;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(2) > span:nth-child(1)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(2) > span:nth-child(1) {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: normal !important;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(2) > span:nth-child(2)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) {
+  position: relative;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(2) > span:nth-child(2) > div
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(2) > span:nth-child(2) > div {
+  width: auto;
+  padding: 10px 8px;
+  text-indent: 0;
+  background-color: rgba(50, 50, 50, 0.9);  
+  display: none;
+  position: absolute;
+  top: -8px;
+  left: 5px;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  font-size: 11px;
+  z-index: 100;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(2) > span:nth-child(1):hover + span div
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(2) > span:nth-child(1):hover + span div {
+  display: block;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(3)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(3) {
+  width: 230px;
+  display: flex;
+  margin: auto 40px auto 0px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-family: Meiryo;
+  font-size: 15px;
+  color: #FFFFFF;
+  border-bottom: rgba(217, 217, 217, 0.05) 1.5px solid;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(3) > div:nth-child(2)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(3) > div:nth-child(2) {
+  margin-left: 30px;
+}
+
+.page05-voyage-plan-grid .page05-location-area > div:nth-child(2) > div:nth-child(3) > div:nth-child(3)
+, .page05-voyage-plan-grid .page05-location-area > div:nth-child(3) > div:nth-child(3) > div:nth-child(3) {
+  display: flex;
+  margin: 2px auto auto 15px;
+  font-family: Meiryo;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.page05-button-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.page05-button-area button {
+  width: 193px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #E66300;
+  border: none;
+  border-radius: 20px;
+  font-family: Meiryo;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page05-button-area button > div:nth-child(1) {
+  display: flex;
+  margin: auto 0 12px 0;
+}
+.page05-button-area button > div:nth-child(2) {
+  display: flex;
+  margin: auto 0;
+}
+
+.page05-button-area button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+.page05-button-area button:hover svg path {
+  stroke: #40475d;
+}
+
+.page05-button-area svg {
+  margin-right: 10px;
+}

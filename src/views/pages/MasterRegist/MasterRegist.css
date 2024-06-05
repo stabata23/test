@@ -1,0 +1,107 @@
+.page02-delete-modal-none {
+  display: none;
+}
+
+.page02-delete-modal {
+  height: 100%;
+  display: flex;
+}
+
+.page02-delete-modal-area {
+  width: 600px;
+  height: 430px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.page02-delete-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.page02-delete-modal-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page02-delete-modal-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.page02-delete-modal-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page02-delete-modal-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page02-delete-modal-contents {
+  width: 100%;
+  height: calc(100% - 120px); 
+  display: flex;
+  flex-direction: column;
+}
+
+.page02-delete-modal-contents div {
+  display: flex;
+  margin: auto;
+}
+
+.page02-delete-modal-contents p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.page02-delete-modal-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.page02-delete-modal-button button {
+  flex: 1;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page02-delete-modal-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+
+.page02-delete-modal-button .page02-delete-modal-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page02-delete-modal-button .page02-delete-modal-ok-button {
+  background-color: #E66300;
+}

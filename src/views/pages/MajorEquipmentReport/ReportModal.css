@@ -1,0 +1,482 @@
+.page02-report-modal-none {
+  display: none;
+}
+
+.page02-report-modal {
+  height: 100%;
+  display: flex;
+}
+
+.page02-report-modal-area {
+  width: 860px;
+  /* height: 745px; */
+  height: 800px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.page02-report-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.page02-modal-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page02-modal-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.page02-modal-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page02-modal-header p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.page02-modal-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page02-modal-contents {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.page02-modal-contents label {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+
+.page02-modal-contents textarea {
+  height: 78px;
+  width: 460px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: #CBCBCB 3px solid;
+  resize: none;
+  outline: none;
+}
+
+.page02-modal-contents textarea:hover
+, .page02-modal-contents textarea:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page02-modal-contents input[type="text"] {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.page02-modal-contents input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: 0;
+}
+
+.page02-modal-contents .page02-create-date {
+  height: 90px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.page02-modal-contents .page02-create-date label {
+  display: flex;
+  margin: auto 0 auto 0;
+}
+
+.page02-calendar-border {
+  /* height: 23px; */
+  background-color: rgba(255, 255, 255, 0.15);
+  border: #CBCBCB 1px solid;
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+  margin: auto 0 auto 0;
+}
+
+.page02-calendar-border:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page02-calendar-border > div:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.page02-calendar-border > div:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page02-modal-contents .page02-calendar {
+  margin: auto;
+  cursor: pointer;
+}
+
+/* 担当者 */
+.page02-modal-contents .page02-maintenance-user-area {
+  /* width: 980px; */
+  width: 650px;
+  height: 100px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+.page02-modal-contents .page02-maintenance-user-area label {
+  line-height: 35px;
+}
+
+.page02-maintenance-user-area > div {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.page02-maintenance-user-area #page02-maintenance-user {
+  height: 35px;
+  width: 220px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  border: 1px solid #CBCBCB;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../../../../public/images/selectArrow.svg");
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+.page02-maintenance-user-area #page02-maintenance-user:hover
+, .page02-maintenance-user-area #page02-maintenance-user:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page02-maintenance-user-area .page02-maintenance-user-list-area {
+  width: 262px;
+  max-height: 280px;
+  position: absolute;
+  top: 37px;
+  left: 120px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: visible;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page02-maintenance-user-list-area-none {
+  display: none;
+}
+
+.page02-maintenance-user-list {
+  width: 262px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #303548;
+}
+
+.page02-maintenance-user {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+
+.page02-maintenance-user:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.page02-maintenance-user:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.page02-maintenance-user > div {
+  position: relative;
+  margin: auto auto auto 10px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+}
+
+/* 保留作業 */
+.page02-modal-contents .page02-pending-work {
+  height: 130px;
+  width: 650px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding-top: 30px;
+}
+
+.page02-underline-pending-work {
+  height: 3px;
+  width: 30px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -7px;
+  left: 120px;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.page02-modal-contents .page02-pending-work textarea:focus + .page02-underline-pending-work {
+  width: 500px;
+  background-color: #FFFFFF;
+  transition: width 0.4s ease-out;
+}
+
+/* 備考 */
+.page02-modal-contents .page02-note {
+  height: 130px;
+  width: 650px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding-top: 30px;
+}
+
+.page02-underline-note {
+  height: 3px;
+  width: 30px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -7px;
+  left: 120px;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.page02-modal-contents .page02-note textarea:focus + .page02-underline-note {
+  width: 500px;
+  background-color: #FFFFFF;
+  transition: width 0.4s ease-out;
+}
+
+.page02-modal-contents .page02-file {
+  width: 650px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page02-modal-contents .page02-file p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Meiryo;
+  font-size: 15px;
+  margin: 0 10px 0 0;
+}
+
+.page02-modal-contents .page02-file label {
+  display: inline-block;
+  padding-top: 15px;
+}
+
+.page02-modal-contents .page02-file svg {
+  cursor: pointer;
+}
+
+.page02-modal-contents .page02-file svg:hover {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.page02-modal-contents .page02-file > div > div {
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page02-modal-contents .page02-file > div > div:first-child {
+  margin-top: 0;
+}
+
+.page02-modal-contents .page02-file > div > div > span {
+  display: flex;
+  cursor: pointer;
+}
+
+.page02-modal-contents .page02-file > div > div svg {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  display: block;
+  margin: auto 0;
+  padding-right: 5px;
+}
+
+.page02-modal-contents .page02-file > div > div > span:hover svg g g path {
+  fill: white !important;
+}
+
+.page02-modal-contents .page02-filename-area {
+  width: 460px;
+  height: auto;
+  max-width: 460px;
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page02-modal-contents .page02-filename-area::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.page02-modal-contents .page02-file-downloadable {
+  text-decoration: underline;
+}
+
+.page02-modal-contents .page02-file-downloadable:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  cursor: pointer;
+}
+
+.page02-modal-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.page02-modal-button .page02-file-info {
+  flex: 1;
+  height: 60px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Meiryo;
+  font-size: 12px;
+}
+
+.page02-modal-button .page02-file-info span {
+  width: 50px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.page02-modal-button .page02-file-info div:nth-child(1) {
+  margin-top: 10px;
+}
+
+.page02-modal-button button {
+  flex: 1;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page02-modal-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+
+.page02-modal-button .page02-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page02-modal-button .page02-ok-button {
+  background-color: #E66300;
+}
+
+/* エラー表示 */
+.page02-error-area {
+  position: relative;
+}
+
+.page02-error-area > .page02-error-create-date {
+  color: #f44336;
+  font-family: Meiryo;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  top: 30px;
+  left: -250px;
+}
+
+.page02-modal-button .page02-ok-button:disabled {
+  color: black;
+  background-color: #ccc;
+  opacity: 1;
+  cursor: default;
+}

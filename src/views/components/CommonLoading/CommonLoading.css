@@ -1,0 +1,11 @@
+.com04-loading-area {
+  display: flex;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 100;
+}
+
+.com04-loading {
+  margin: auto;
+}

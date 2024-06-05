@@ -1,0 +1,428 @@
+.page01-maintenance-report-modal-none {
+  display: none;
+}
+
+.page01-maintenance-report-modal {
+  height: 100%;
+  display: flex;
+}
+
+.page01-maintenance-report-modal-area {
+  width: 860px;
+  height: 745px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.page01-maintenance-report-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.page01-maintenance-report-modal-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page01-maintenance-report-modal-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.page01-maintenance-report-modal-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page01-maintenance-report-modal-header p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.page01-maintenance-report-modal-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page01-maintenance-report-modal-contents {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 85px; */
+  margin: auto;
+}
+
+.page01-maintenance-report-modal-contents label {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+  display: inline-block;
+  width: 100px;
+  vertical-align: top;
+}
+
+.page01-maintenance-report-no {
+  height: 70px;
+  width: 650px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-no p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status {
+  width: 650px;
+  height: 80px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div > label {
+  width: auto;
+  font-size: 14px;
+  font-weight: normal;
+  margin-right: 40px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div:nth-child(1) > label {
+  padding-left: 6px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div > label > span:nth-child(1) {
+  padding: 5px;
+  left: -4px;
+  top: -1px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div > label > span:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div > label > span:nth-child(1) > span {
+  padding: 0;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div > label > span:nth-child(1) > span > div > svg {
+  transition: none !important;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-status > div > div > label > span:nth-child(2) {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-implementation-date {
+  height: 100px;
+  width: 650px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page01-maintenance-report-calendar-border {
+  height: 23px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: #CBCBCB 1px solid;
+  display: flex;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.page01-maintenance-report-calendar-border:hover
+, .page01-maintenance-report-calendar-border:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page01-maintenance-report-calendar-border > div:nth-child(1) {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+.page01-maintenance-report-calendar-border > div:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-calendar {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-implementation-date input[type="text"] {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-implementation-date input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  outline: 0;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-note {
+  height: 170px;
+  width: 650px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding-top: 30px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-note textarea {
+  height: 120px;
+  width: 460px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: #CBCBCB 3px solid;
+  resize: none;
+  outline: none;
+}
+
+.page01-underline-note {
+  height: 3px;
+  width: 30px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -7px;
+  left: 120px;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-note textarea:focus + .page01-underline-note {
+  width: 500px;
+  background-color: #FFFFFF;
+  transition: width 0.4s ease-out;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-note textarea:hover
+, .page01-maintenance-report-modal-contents .page01-maintenance-report-note textarea:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file {
+  width: 650px;
+  border-top: rgba(255, 255, 255, 0.15) 1px solid;
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file p {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Meiryo;
+  font-size: 15px;
+  margin: 0 10px 0 0;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file label {
+  padding-top: 15px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file svg {
+  cursor: pointer;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file svg:hover{
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file > div > div {
+  margin-top: 6px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file > div > div:first-child {
+  margin-top: 0;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file > div > div > span {
+  display: flex;
+  cursor: pointer;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file > div > div svg {
+  width: 15px;
+  height: 15px;
+  min-width: 15px;
+  min-height: 15px;
+  display: block;
+  margin: auto 0;
+  padding-right: 5px;
+}
+
+.page01-maintenance-report-modal-contents .page01-maintenance-report-file > div > div > span:hover svg g g path {
+  fill: white !important;
+}
+
+.page01-maintenance-report-modal-contents .page01-filename-area {
+  width: 480px;
+  height: auto;
+  max-width: 460px;
+  max-height: 90px;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page01-maintenance-report-modal-contents .page01-filename-area::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.page01-maintenance-report-modal-contents .page01-file-downloadable {
+  text-decoration: underline;
+}
+
+.page01-maintenance-report-modal-contents .page01-file-downloadable:hover {
+  color: rgba(255, 255, 255, 1) !important;
+  cursor: pointer;
+}
+
+.page01-maintenance-report-modal-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.page01-maintenance-report-modal-button .page01-maintenance-report-file-info {
+  flex: 1;
+  height: 60px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Meiryo;
+  font-size: 12px;
+}
+
+.page01-maintenance-report-modal-button .page01-maintenance-report-file-info span {
+  width: 50px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.page01-maintenance-report-modal-button .page01-maintenance-report-file-info div:nth-child(1) {
+  margin-top: 10px;
+}
+
+.page01-maintenance-report-modal-button button {
+  flex: 1;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page01-maintenance-report-modal-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+
+.page01-maintenance-report-modal-button .page01-maintenance-report-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page01-maintenance-report-modal-button .page01-maintenance-report-ok-button {
+  background-color: #E66300;
+}
+
+/* エラー表示 */
+.page01-error-area {
+  position: relative;
+}
+
+.page01-error-area > .page01-error-implementation-date {
+  color: #f44336;
+  font-family: Meiryo;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  top: 30px;
+  left: -250px;
+}
+
+.page01-maintenance-report-modal-button .page01-maintenance-report-ok-button:disabled {
+  color: black;
+  background-color: #ccc;
+  opacity: 1;
+  cursor: default;
+}

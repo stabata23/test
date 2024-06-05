@@ -1,0 +1,349 @@
+.page02-contents {
+  width: calc(100% - 63px);
+  height: calc(100vh - 85px);
+  background-color: #212332;
+}
+
+.page02-page-title {
+  margin-top: 25px;
+  margin-left: 25px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page02-report-area {
+  width: 1750px;
+  height: calc(100vh - 300px);
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.page02-report-table-header-area {
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.page02-report-table-header {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;  
+}
+
+.page02-report-table-header svg {
+  cursor: pointer;
+}
+
+.page02-report-table-header svg path:hover {
+  fill: #FFFFFF;
+  opacity: none;
+}
+
+.page02-report-table-header svg:nth-child(1) {
+  margin-left: 5px;
+}
+
+.page02-report-table-header > td {
+  padding: 0;
+  border-bottom: dotted rgba(255, 255, 255, 0.5) 1px;
+}
+
+.page02-report-table-header td:nth-child(1) {
+  width: 60px;
+  padding-left: 30px;
+}
+
+.page02-report-table-header td:nth-child(2) {
+	width: 200px;
+}
+
+.page02-report-table-header td:nth-child(3)
+, .page02-report-table-header td:nth-child(4) {
+	width: 600px;
+}
+
+.page02-report-table-header td:nth-child(5) {
+	width: 200px;
+}
+
+.page02-report-table-scroll {
+  width: 1700px;
+  /* height: 750px; */
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.page02-report-table-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.page02-report-table {
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.page02-report-table-body {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.page02-report-table-body:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.page02-report-table-body:nth-child(even) {
+	background-color: #212332;
+}
+
+.page02-report-table-body:nth-child(even):hover {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.page02-report-table-body td {
+  height: 50px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  padding: 0;
+}
+
+.page02-report-table-body td:nth-child(5) {
+	display: flex;
+  justify-content: space-between;
+}
+
+.page02-report-table tr td:nth-child(1) {
+	width: 90px;
+}
+
+.page02-report-table tr td:nth-child(2) {
+	width: 200px;
+}
+
+.page02-report-table tr td:nth-child(3)
+, .page02-report-table tr td:nth-child(4) {
+	width: 600px;
+}
+
+.page02-report-table tr td:nth-child(3) > span:nth-child(1) {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: normal !important;
+  padding-right: 5px;
+}
+
+.page02-report-table tr td:nth-child(3) > span:nth-child(2) {
+  width: auto;
+  padding: 10px 8px;
+  text-indent: 0;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: none;
+  position: relative;
+  left: 5px;
+  white-space: normal !important;
+  vertical-align: middle;
+  overflow: visible;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  font-size: 11px;
+  z-index: 100;
+}
+
+.page02-report-table tr td:nth-child(3) > span:nth-child(1):hover + span {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.page02-report-table tr .page02-note-hover > span:nth-child(1) {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: normal !important;
+  padding-right: 5px;
+}
+
+.page02-report-table tr .page02-note-hover > span:nth-child(2) {
+  width: auto;
+  padding: 10px 8px;
+  text-indent: 0;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: none;
+  position: relative;
+  left: 5px;
+  white-space: normal !important;
+  vertical-align: middle;
+  overflow: visible;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  font-size: 11px;
+  z-index: 100;
+}
+
+.page02-report-table tr .page02-note-hover > span:nth-child(1):hover + span {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.page02-note-hover-long {
+  position: relative;
+}
+
+.page02-report-table tr .page02-note-hover-long > span:nth-child(1) {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: normal !important;
+  padding-right: 5px;
+}
+
+.page02-report-table tr .page02-note-hover-long > span:nth-child(2) {
+  width: auto;
+  padding: 10px 8px;
+  text-indent: 0;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: none;
+  position: absolute;
+  top: 58px;
+  white-space: normal !important;
+  overflow: visible;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  font-size: 11px;
+  z-index: 100;
+}
+
+.page02-report-table tr:last-child .page02-note-hover-long > span:nth-child(2) {
+  width: auto;
+  padding: 10px 8px;
+  text-indent: 0;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: none;
+  position: absolute;
+  top: -42px;
+  white-space: normal !important;
+  overflow: visible;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  font-size: 11px;
+  z-index: 100;
+}
+
+.page02-report-table tr .page02-note-hover-long > span:nth-child(1):hover + span {
+  display: block;
+}
+
+.page02-report-table tr td:nth-child(5) {
+	width: 200px;
+}
+
+.page02-report-table tr td:nth-child(5) div:nth-child(1) {
+	margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.page02-report-table-body > td:nth-child(1) > div {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.page02-report-table-body > td:nth-child(1) > div > svg {
+  height: 40px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.page02-report-table-body > td:nth-child(1) > div > svg:hover g path {
+  fill: white !important;
+}
+
+.page02-report-table-body > td:nth-child(5) > div:nth-child(1) > div {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.page02-report-table-body > td:nth-child(5) > div:nth-child(1) > .page02-hover > svg:hover {
+  fill: #CBCBCB !important;
+}
+
+.page02-report-table-body > td:nth-child(5) > div:nth-child(2) {
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+  display: flex;
+  margin: auto 20px auto auto;
+  cursor: pointer;
+}
+
+.page02-report-table-body > td:nth-child(5) > div:nth-child(2) > svg {
+  height: 15px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.page02-report-table-body > td:nth-child(5) > div:nth-child(2):hover svg g g path {
+  fill: white !important;
+}
+
+.page02-button-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.page02-button-area button {
+  width: 193px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #E66300;
+  border: none;
+  border-radius: 20px;
+  font-family: Meiryo;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page02-button-area button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+.page02-button-area button:hover svg g path {
+  fill: #40475d;
+}
+
+.page02-button-area svg {
+  margin-right: 10px;
+}

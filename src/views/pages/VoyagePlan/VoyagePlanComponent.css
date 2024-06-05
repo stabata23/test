@@ -1,0 +1,373 @@
+/* input type=text 全般設定 start */
+.page05-modal-voyage-plan-area * input[type="text"] {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-bottom: #CBCBCB 3px solid;
+  outline: none;
+  font-family: Meiryo;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+.page05-modal-voyage-plan-area * input[type="text"]:hover
+, .page05-modal-voyage-plan-area * input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* input type=text 全般設定 end */
+
+.page05-modal-contents > div:has(.page05-modal-title-area):not(:nth-child(1)) {
+  /* margin-top: 50px; */
+  margin-top: 20px;
+}
+
+.page05-modal-title-area {
+  width: 780px;
+  display: flex;
+  margin: 0 auto 0 0;
+  border-bottom: rgba(255, 255, 255, 0.5) 1px dashed;
+}
+
+/* .page05-modal-title {
+  margin: 0 0 10px 40px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+} */
+
+.page05-modal-voyage-plan-area {
+  width: 780px;
+  height: 170px;
+  background-color: rgba(255, 255, 255, 0.03);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.page05-modal-voyage-plan-area > div:nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+  margin: auto 0 0 0px;
+}
+
+.page05-modal-voyage-plan-area > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 0 auto 0px;
+}
+
+/* 画像 */
+.page05-modal-voyage-plan-area > div > div:nth-child(1) {
+  display: flex;
+  margin: auto 10px auto 25px;
+}
+
+/* 場所 */
+.page05-modal-voyage-plan-area > div > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px auto 10px;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(2) input[type="text"] {
+  width: 285px;
+  margin: 0;
+  padding: 0 5px 0 10px;
+}
+
+/* カレンダー */
+.page05-modal-voyage-plan-area > div > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  margin: auto 10px auto 10px;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(3) > div {
+  display: flex;
+  margin: auto;
+  /* height: 43px; */
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(3) > div > div:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  margin: 5px 0 5px -30px;
+  position: relative;
+  /* top: 10px; */
+  left: 33px;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(3) > div > div:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: background-color 0.5s linear;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(3) > div > div:nth-child(1) > div {
+  height: 30px;
+  display: flex;
+  margin: auto;
+  /* height: 40px; */
+  /* background-color: red; */
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(3) > div > div:nth-child(1) > div > img {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(3) input[type="text"] {
+  width: 135px;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  text-indent: 30px;
+}
+
+/* 時 */
+.page05-modal-voyage-plan-area > div > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0px auto 0px;
+  position: relative;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(4) input[type="text"] {
+  width: 55px;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  background-image: url(http://localhost:3000/static/media/selectArrow.739c6f21242e11b61c60.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+.page05-ymlist-area {
+  width: 70px;
+  height: 280px;
+  position: absolute;
+  top: 42px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.page05-ymlist-area-up {
+  width: 70px;
+  height: 280px;
+  position: absolute;
+  top: -280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 1;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.page05-ymlist-area:hover
+, .page05-ymlist-area-up:hover {
+  display: block;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(4) input[type="text"]:focus  + .page05-ymlist-area
+, .page05-modal-voyage-plan-area > div > div:nth-child(4) input[type="text"]:focus  + .page05-ymlist-area-up {
+  display: block;
+}
+
+.page05-ymlist-area-none {
+  display: none;
+}
+
+.page05-ymlist-area::-webkit-scrollbar
+, .page05-ymlist-area-up::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.page05-ymlist {
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #303548;
+  
+}
+
+.page05-ym {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+
+.page05-ym > div {
+  margin: auto auto auto 10px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+}
+
+.page05-ym:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.page05-ym:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ： */
+.page05-modal-voyage-plan-area > div > div:nth-child(5) {
+  display: flex;
+  margin: auto 0px auto 0px;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(5) > p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+}
+
+/* 分 */
+.page05-modal-voyage-plan-area > div > div:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0px auto 0px;
+  position: relative;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(6) input[type="text"] {
+  width: 55px;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  background-image: url(http://localhost:3000/static/media/selectArrow.739c6f21242e11b61c60.svg);
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(6) input[type="text"]:focus  + .page05-ymlist-area
+, .page05-modal-voyage-plan-area > div > div:nth-child(6) input[type="text"]:focus  + .page05-ymlist-area-up {
+  display: block;
+}
+
+/* 発着 */
+.page05-modal-voyage-plan-area > div > div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 7px 10px;
+  /* height: 40px; */
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(7) > p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Meiryo;
+  font-size: 15px;
+  margin: auto auto 0 auto;
+}
+
+.page05-modal-voyage-plan-area > .page05-arrow-area {
+  display: flex;
+  margin: 0 0 0 200px;
+}
+
+/* 削除ボタン */
+.page05-modal-voyage-plan-area > div > div:nth-child(8) {
+  position: relative;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(8) > div {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -12px;
+  left: 20px;
+  display: flex;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(8) > div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page05-modal-voyage-plan-area > div > div:nth-child(8) > div > img {
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* プラスボタン */
+.page05-plus-button-area {
+  width: 780px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.page05-plus-button-area > span {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page05-plus-button-area > span > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.page05-plus-button-area > span > svg:hover g path:nth-child(1) {
+  fill: white !important;
+}
+
+
+/* エラー表示 */
+.page05-error-area {
+  position: relative;
+}
+
+.page05-error-area > .page05-error-start-point
+, .page05-error-area > .page05-error-start-hour
+, .page05-error-area > .page05-error-start-minutes
+, .page05-error-area > .page05-error-goal-point
+, .page05-error-area > .page05-error-goal-hour
+, .page05-error-area > .page05-error-goal-minutes {
+  color: #f44336;
+  font-family: Meiryo;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  top: 0px;
+}
+
+.page05-error-area > .page05-error-start-date
+, .page05-error-area > .page05-error-goal-date {
+  color: #f44336;
+  font-family: Meiryo;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  top: 0px;
+  left: -75px;
+}

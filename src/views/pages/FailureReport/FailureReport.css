@@ -1,0 +1,419 @@
+.page03-contents {
+  width: calc(100% - 63px);
+  height: calc(100vh - 85px);
+  background-color: #212332;
+}
+
+.page03-page-title {
+  margin-top: 25px;
+  margin-left: 25px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page03-report-area {
+  width: 1750px;
+  height: calc(100vh - 300px);
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.page03-filter-area {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page03-filter-area > div {
+  margin-right: 50px;
+}
+
+.page03-filter-area > div:nth-child(3) {
+  display: flex;
+  justify-content: left;
+}
+
+.page03-filter-area label {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 35px;
+  margin-right: 10px;
+}
+
+.page03-filter-area img {
+  margin-right: 10px;
+  width: 17px;
+  height: 35px;
+}
+
+.page03-filter-area > div {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.page03-filter-area #page03-filter-kind
+, .page03-filter-area #page03-filter-group {
+  height: 35px;
+  width: 200px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  border: 1px solid #CBCBCB;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../../../../public/images/selectArrow.svg");
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+.page03-filter-area #page03-filter-kind:hover
+, .page03-filter-area #page03-filter-group:hover
+, .page03-filter-area #page03-filter-kind:focus
+, .page03-filter-area #page03-filter-group:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page03-filter-area .page03-filter-kind-list-area {
+  width: 240px;
+  max-height: 280px;
+  position: absolute;
+  top: 37px;
+  left: 39px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: visible;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page03-filter-area .page03-filter-group-list-area {
+  width: 240px;
+  max-height: 280px;
+  position: absolute;
+  top: 37px;
+  left: 67px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  overflow: visible;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.page03-filter-kind-list-area-none
+, .page03-filter-group-list-area-none {
+  display: none;
+}
+
+.page03-filter-kind-list
+, .page03-filter-group-list {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #303548;
+}
+
+.page03-filter-kind
+, .page03-filter-group {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  cursor: pointer;
+}
+
+.page03-filter-kind:nth-child(even)
+, .page03-filter-group:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.page03-filter-kind:hover
+, .page03-filter-group:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.page03-filter-kind > div
+, .page03-filter-group > div {
+  position: relative;
+  margin: auto auto auto 10px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+}
+
+.page03-filter-area input[type="text"] {
+  width: 250px;
+  height: 33px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-bottom: #CBCBCB 3px solid;
+  outline: none;
+}
+
+.page03-underline-filter {
+  height: 3px;
+  width: 30px;
+  background-color: #FFFFFF;
+  position: relative;
+  top: -3px;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.page03-filter-area div input[type="text"]:hover
+, .page03-filter-area div input[type="text"]:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page03-filter-area div input[type="text"]:focus + .page03-underline-filter {
+  width: 280px;
+  background-color: #FFFFFF;
+  transition: width 0.4s ease-out;
+}
+
+.page03-report-table-header-area {
+  white-space: nowrap;
+  border-spacing: 0;
+  margin-top: 70px;
+}
+
+.page03-report-table-header {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;  
+}
+
+.page03-report-table-header svg {
+  cursor: pointer;
+}
+
+.page03-report-table-header svg path:hover {
+  fill: #FFFFFF;
+  opacity: none;
+}
+
+.page03-report-table-header svg:nth-child(1) {
+  margin-left: 5px;
+}
+
+.page03-report-table-header > td {
+  padding: 0;
+  border-bottom: dotted rgba(255, 255, 255, 0.5) 1px;
+}
+
+.page03-report-table-header td:nth-child(1) {
+	width: 60px;
+  padding-left: 30px;
+}
+
+.page03-report-table-header td:nth-child(2)
+, .page03-report-table-header td:nth-child(3) {
+	width: 200px;
+}
+
+.page03-report-table-header td:nth-child(4) {
+	width: 600px;
+}
+
+.page03-report-table-header td:nth-child(5)
+, .page03-report-table-header td:nth-child(6) {
+	width: 300px;
+}
+
+.page03-report-table-scroll {
+  width: 1700px;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.page03-report-table-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #808080;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+.page03-report-table {
+  white-space: nowrap;
+  border-spacing: 0;
+}
+
+.page03-report-table-body {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.page03-report-table-body:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.page03-report-table-body:nth-child(even) {
+	background-color: #212332;
+}
+
+.page03-report-table-body:nth-child(even):hover {
+	background-color: rgba(255, 255, 255, 0.25);
+}
+
+.page03-report-table-body td {
+  height: 50px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  padding: 0;
+}
+
+.page03-report-table-body td:nth-child(6) {
+	display: flex;
+  justify-content: space-between;
+}
+
+.page03-report-table-body td:nth-child(6) div {
+	margin:  auto 0;
+}
+
+.page03-report-table-body > td:nth-child(1) > div {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.page03-report-table-body > td:nth-child(1) > div > svg {
+  height: 40px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.page03-report-table-body > td:nth-child(1) > div > svg:hover g path {
+  fill: white !important;
+}
+
+.page03-report-table-body > td:nth-child(6) > div:nth-child(2) {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  margin: auto 20px auto auto;
+  cursor: pointer;
+}
+
+.page03-report-table-body > td:nth-child(6) > div:nth-child(2) > svg {
+  height: 15px;
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.page03-report-table-body > td:nth-child(6) > div:nth-child(2):hover svg g g path {
+  fill: white !important;
+}
+
+.page03-report-table tr td:nth-child(1) {
+	width: 90px;
+}
+
+.page03-report-table tr td:nth-child(2), .page03-report-table tr td:nth-child(3) {
+	width: 200px;
+}
+
+.page03-report-table tr td:nth-child(4) {
+	width: 600px;
+}
+
+.page03-report-table tr td:nth-child(4) span:nth-child(1) {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: normal !important;
+  padding-right: 5px;
+}
+
+.page03-report-table tr td:nth-child(4) span:nth-child(2) {
+  width: auto;
+  padding: 10px 8px;
+  text-indent: 0;
+  background-color: rgba(50, 50, 50, 0.9);
+  display: none;
+  position: relative;
+  left: 5px;
+  white-space: normal !important;
+  vertical-align: middle;
+  overflow: visible;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  font-size: 11px;
+  z-index: 100;
+}
+
+.page03-report-table tr td:nth-child(4) > span:nth-child(1):hover + span:nth-child(2) {
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.page03-report-table tr td:nth-child(5), .page03-report-table tr td:nth-child(6) {
+	width: 300px;
+}
+
+.page03-button-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.page03-button-area button {
+  width: 193px;
+  height: 40px;
+  color: #FFFFFF;
+  background-color: #E66300;
+  border: none;
+  border-radius: 20px;
+  font-family: Meiryo;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page03-button-area button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+
+.page03-button-area button:hover svg g path {
+  fill: #40475d;
+}
+
+.page03-button-area svg {
+  margin-right: 10px;
+}

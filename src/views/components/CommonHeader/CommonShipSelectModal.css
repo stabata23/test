@@ -1,0 +1,144 @@
+.com02-ship-modal {
+  height: 100%;
+  display: flex;
+}
+
+.com02-ship-modal-area {
+  width: 600px;
+  height: 510px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.com02-ship-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.com02-ship-modal-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.com02-ship-modal-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.com02-ship-modal-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.com02-ship-modal-header p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.com02-ship-modal-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.com02-ship-modal-contents {
+  width: 100%;
+  height: calc(100% - 120px);
+  display: flex;
+}
+
+.com02-ship-modal-contents > div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.com02-ship-modal-contents > div > div:not(:nth-child(1)) {
+  margin-top: 20px;
+}
+
+.com02-ship-modal-contents > div > div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.com02-ship-modal-contents > div > div > label {
+  padding-left: 6px;
+}
+
+.com02-ship-modal-contents > div > div > label > span:nth-child(1) {
+  padding: 5px;
+  left: -4px;
+  top: -1px;
+}
+
+.com02-ship-modal-contents > div > div > label > span:nth-child(1):hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+}
+
+.com02-ship-modal-contents > div > div > label > span:nth-child(1) > span {
+  padding: 0;
+}
+
+.com02-ship-modal-contents > div > div > label > span:nth-child(1) > span > div > svg {
+  transition: none !important;
+}
+
+.com02-ship-modal-contents > div > div > label > span:nth-child(2) {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+}
+
+.com02-ship-modal-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.com02-ship-modal-button button {
+  width: 50%;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.com02-ship-modal-button .com02-ship-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.com02-ship-modal-button .com02-ship-ok-button {
+  background-color: #E66300;
+}
+
+.com02-ship-modal-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}

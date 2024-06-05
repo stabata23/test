@@ -1,0 +1,107 @@
+.page01-plan-modal-none {
+  display: none;
+}
+
+.page01-plan-modal {
+  height: 100%;
+  display: flex;
+}
+
+.page01-plan-modal-area {
+  width: 600px;
+  height: 430px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.page01-plan-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.page01-plan-modal-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page01-plan-modal-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.page01-plan-modal-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.page01-plan-modal-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.page01-plan-modal-contents {
+  width: 100%;
+  height: calc(100% - 120px); 
+  display: flex;
+  flex-direction: column;
+}
+
+.page01-plan-modal-contents div {
+  display: flex;
+  margin: auto;
+}
+
+.page01-plan-modal-contents p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.page01-plan-modal-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.page01-plan-modal-button button {
+  flex: 1;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.page01-plan-modal-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}
+
+.page01-plan-modal-button .page01-plan-modal-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.page01-plan-modal-button .page01-plan-modal-ok-button {
+  background-color: #E66300;
+}

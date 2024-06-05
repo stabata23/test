@@ -1,0 +1,228 @@
+.com01-calendar-modal {
+  height: 100%;
+  display: flex;
+}
+
+.com01-calendar-area {
+  width: 600px;
+  height: 600px;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2A2E3F;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: auto;
+}
+
+.com01-calendar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 101;
+}
+
+.com01-calendar-header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.com01-calendar-header p {
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.com01-calendar-header div {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.com01-calendar-header div:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.com01-calendar-header img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.com01-calendar-contents {
+  width: 370px;
+  height: calc(100% - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.com01-calendar-contents .com01-change-month {
+  height: 40px;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.com01-calendar-contents .com01-change-month .com01-change-month-icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+}
+
+.com01-calendar-contents .com01-change-month .com01-change-month-icon:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+.com01-calendar-contents .com01-change-month img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.com01-calendar-contents .com01-change-month p {
+  margin: 1px 10px 0 10px;
+}
+
+.com01-calendar-contents .com01-calendar-body {
+  border: dotted 1px rgba(255, 255, 255, 0.5);
+}
+
+.com01-calendar-body .com01-day-of-week {
+  display: flex;
+  justify-content: center;
+}
+
+.com01-calendar-body .com01-day-of-week p {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 10px;
+}
+
+.com01-calendar-body .com01-week {
+  display: flex;
+  justify-content: center;
+}
+
+.com01-calendar-body .com01-week .com01-this-month {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  font-family: Meiryo;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.com01-calendar-body .com01-week .com01-other-month {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  font-family: Meiryo;
+  font-size: 14px;
+  margin: 10px 10px;
+  cursor: pointer;
+}
+
+.com01-calendar-body .com01-week input[type="radio"] + .com01-this-month {
+  color: #FFFFFF;
+}
+
+.com01-calendar-body .com01-week input[type="radio"] + .com01-other-month {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.com01-calendar-body .com01-week input[type="radio"] {
+  display: none;
+}:hover + .com01-this-month:hover, :hover + .com01-other-month:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  color: #FFFFFF;
+}
+
+.com01-calendar-body .com01-week input[type="radio"] {
+  display: none;
+}:checked + .com01-this-month, :checked + .com01-other-month {
+  background-color: rgba(0, 255, 255, 0.7);
+  border-radius: 15px;
+  color: #000000 !important;
+}
+
+.com01-calendar-body .com01-week input[type="radio"] {
+  display: none;
+}:checked + .com01-this-month:hover, :checked + .com01-other-month:hover{
+  background-color: rgba(0, 255, 255, 0.7);
+  border-radius: 15px;
+  color: #000000 !important;
+}
+
+.com01-calendar-contents .com01-select-day {
+  width: 100%;
+}
+
+.com01-calendar-contents .com01-select-day p {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.com01-calendar-button {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+}
+
+.com01-calendar-button button {
+  flex: 1;
+  height: 60px;
+  border: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.com01-calendar-button .com01-close-button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.com01-calendar-button .com01-ok-button {
+  background-color: #E66300;
+}
+
+.com01-calendar-button button:hover {
+  background-color: #FFFFFF;
+  color: #40475d;
+}

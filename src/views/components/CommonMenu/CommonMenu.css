@@ -1,0 +1,135 @@
+.com03-menu {
+  width: 63px;
+  background-color: #14161E;
+  position: relative;
+}
+
+.com03-menu-hover {
+  width: 63px;
+  height: calc(100vh - 85px);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #14161E;
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: width 0.4s ease-out;
+  z-index: 100;
+}
+
+.com03-menu a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.com03-menu:hover .com03-menu-hover {
+  width: 235px;
+  display: block;
+  transition: width 0s ease-out;
+}
+
+.com03-menu-title {
+  width: 160px;
+  display: none;
+  color: #FFFFFF;
+  font-family: Meiryo;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.com03-menu:hover .com03-menu-title {
+  display: block; 
+}
+
+.com03-padding-title {
+  padding-top: 8px;
+}
+
+.com03-menu-arrow {
+  background-image: url("../../../../public/images/kindArrow.svg");
+  background-position: right 0px center;
+  background-repeat: no-repeat;
+}
+
+.com03-menu-sub-area {
+  width: 235px;
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 235px;
+  flex-direction: column;
+  background-color: #303548;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.com03-selected .com03-menu-sub-area {
+  left: 229px;
+}
+
+.com03-selected:hover .com03-menu-sub-area
+, .com03-unselected:hover .com03-menu-sub-area {
+  display: block;
+}
+
+.com03-menu-sub-area > a > div
+, .com03-menu-sub-area > div {
+  height: 70px;
+  text-indent: 20px;
+  line-height: 70px;
+}
+
+.com03-menu-sub-area > a > div:nth-child(even)
+, .com03-menu-sub-area > div:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.com03-menu-sub-area > a > div:hover
+, .com03-menu-sub-area > div:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.com03-selected {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #212332;
+  border-left: #DA610F 6px solid;
+  padding-right: 6px;
+  padding-left: 9px;
+}
+
+.com03-selected:hover {  
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.com03-selected:hover svg g {  
+  opacity: 1;
+}
+
+.com03-unselected {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #14161E;
+  padding-left: 15px;
+}
+
+.com03-unselected:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.com03-unselected:hover svg g {  
+  opacity: 1;
+}
+
+
+.com03-selected > div:first-child
+, .com03-unselected > div:first-child {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+}
